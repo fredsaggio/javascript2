@@ -11,6 +11,6 @@ let num10 = 8
 
 /* console.log(num1 + num5 ** num2 % num10) */
 
-for(let c = 1; c <= num10; c++) {
-    console.log(`O valor atual é ${c}`)
+for(let c = 0, passo = 2; c < 10; c += passo) {
+    console.log(c)
 }
