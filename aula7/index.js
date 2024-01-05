@@ -2,7 +2,12 @@
 
 //
 
-const teste = '1' 
-const teste2 = 2
+const primeiroNumero = 8; // Tem que ter o typeof Number, caso contrário, irá concatenar (string)
+const segundoNumero = 10;
+const resultado = primeiroNumero + segundoNumero
+const resultadoDuplicado = resultado * 2 
+const resultadoTriplicado = resultado * 3
+let teste = 10;
+teste = teste * 5
 
-console.log(Number(teste) + teste2) 
+console.log(typeof teste)
