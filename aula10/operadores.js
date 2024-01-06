@@ -14,3 +14,7 @@ let num10 = 8
 for(let c = 0, passo = 2; c < 10; c += passo) {
     console.log(c)
 }
+
+let teste = Number('biscoito');
+
+console.log(teste + num2)
