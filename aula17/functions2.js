@@ -2,6 +2,6 @@ function teste(nome) {
     return `O seu nome é ${nome}?`
 }
 
-const testando = teste('Fred')
+/* const testando = teste('Fred') */
 
-console.log(testando)
+console.log(teste('Fred'))

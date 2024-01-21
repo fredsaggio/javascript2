@@ -1,7 +1,8 @@
-function soma(x=0, y=0) {
+function soma(x=1, y=1) {
 
-const resultado = x + y 
+const resultado = x + y
+
 return resultado 
-}
 
+}
 console.log(soma())
