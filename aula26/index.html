@@ -19,16 +19,19 @@
                     <strong>Resultado</strong> <br> Abaixo do peso <br> Peso normal <br> Sobrepeso <br> Obesidade grau 1 <br> Obesidade grau 2 <br> Obesidade grau 3 <br>
                 </p>
             </div>
+
+            <h1>Calcule o IMC</h1>
+
             <form action="test.php" method="get">
                 
                 <div class="container-form">
                     <label for="input1">Altura:</label>
-                    <input type="text" name="inputum" id="input1">
+                    <input type="number" name="inputum" id="input1">
                 </div>
                 
                 <div class="container-form">
                     <label for="input2">Peso:</label>
-                    <input type="text" name="inputdois" id="input2">
+                    <input type="number" name="inputdois" id="input2">
                 </div>
                 
                 <input type="button" value="Send" onclick="enviar()">

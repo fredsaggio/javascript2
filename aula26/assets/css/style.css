@@ -51,7 +51,7 @@ section p {
 } 
 
 
-form label, form input[type=text], form input[type=button] {
+form label, form input[type=number], form input[type=button] {
     display: block;
     width: 100%;
 }
@@ -64,7 +64,7 @@ form label {
     margin-top: 10px;
 }
 
-input[type=text] {
+input[type=number] {
     border: 1px outset rgb(232, 192, 45);
     height: 50px;
     border-radius: 3px;
