@@ -51,7 +51,7 @@ section p {
 } 
 
 
-form label, form input[type=number], form input[type=button] {
+form label, form input[type=number], form button {
     display: block;
     width: 100%;
 }
@@ -70,7 +70,7 @@ input[type=number] {
     border-radius: 3px;
 }
 
-input[type=button] {
+button {
     margin-top: 20px;
     height: 50px;
     border: 1px outset rgb(24, 171, 229);
@@ -80,11 +80,11 @@ input[type=button] {
     font-weight: bold;
 }
 
-input[type=button]:hover {
+button:hover {
     background-color: var(--primary-color-darker);
 }
 
-input[type=button]:active {
+button:active {
     background-color: var(--primary-color-lighter);
 }
 

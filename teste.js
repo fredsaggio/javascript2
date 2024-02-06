@@ -1,7 +1,3 @@
-const teste = 1
-
-if (typeof teste === 'number') {
-    console.log('É um número')
-} else {
-    console.log('Não é um número')
-}
+const altura = 1.79
+const peso = 71.3
+const imc = (Number(peso.value) / Number(altura.value) ** 2)
