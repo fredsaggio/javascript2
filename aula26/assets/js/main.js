@@ -8,9 +8,11 @@ function AllScope(){
 
     function enviar(notsend) {
 
+        const imc = Number(peso.value) / (Number(altura.value) ** 2);
+
         notsend.preventDefault();
 
-        if (altura.value.length > 3 || peso.value.length > 3) {
+        if (altura.value.length > 4 || peso.value.length > 7) {
             
             resultado.style.backgroundColor = '#FC7388';
             resultado.innerHTML = '<p>Peso e/ou altura inválido(s)</p>';
@@ -32,13 +34,13 @@ function AllScope(){
                     return 'Obesidade grau 3';
                 }
             };
-            
-            const imc = Number(peso.value) / (Number(altura.value) ** 2);
 
             resultado.style.backgroundColor = '#01FEC3';
             resultado.innerHTML = `<p>Seu IMC é igual a ${imc.toFixed(2)} (${medirimc(imc)})</p>`;
 
         };
+        armazenamento.push({imc: imc.toFixed(2), valor: medirimc(imc)})
+        console.log(armazenamento)
     };
 
     form.addEventListener('submit', enviar);
