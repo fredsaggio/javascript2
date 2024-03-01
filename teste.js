@@ -1,3 +1,7 @@
-const altura = 1.79
-const peso = 71.3
-const imc = (Number(peso.value) / Number(altura.value) ** 2)
+function tabuada(n1) {
+    for(let c = 1; c <= 10; c++) {
+        console.log(`${n1} x ${c} = ${n1*c}`)
+    }
+}
+
+tabuada(18);

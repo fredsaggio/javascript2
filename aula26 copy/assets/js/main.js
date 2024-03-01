@@ -6,11 +6,11 @@ function AllScope(){
     const resultado = document.querySelector('div#container-resultado');
     const armazenamento = []
 
-    function enviar(notsend) {
+    function enviar(e) {
 
         const imc = Number(peso.value) / (Number(altura.value) ** 2);
 
-        notsend.preventDefault();
+        e.preventDefault();
 
         if (altura.value.length > 4 || peso.value.length > 7) {
             

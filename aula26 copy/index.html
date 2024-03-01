@@ -1,0 +1,47 @@
+ <!DOCTYPE html>
+ <html lang="pt-br">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Modelo HTML para exercícios futuros</title>
+ </head>
+ <body>
+    <div id="container-father">
+        <section class="container">
+            <h1>Tabela de pesos</h1>
+
+            <div id="container-pilar">
+                <p id="pilar1">
+                    <strong>IMC</strong> <br> Menos do que 18,5 <br> Entre 18,5 e 24,9 <br> Entre 25 e 29,9 <br> Entre 30 e 34,9 <br> Entre 35 e 39,9 <br> Mais do que 40
+                </p>
+                <p id="pilar2">
+                    <strong>Resultado</strong> <br> Abaixo do peso <br> Peso normal <br> Sobrepeso <br> Obesidade grau 1 <br> Obesidade grau 2 <br> Obesidade grau 3 <br>
+                </p>
+            </div>
+
+            <h1>Calcule o IMC</h1>
+
+            <form method="post" id="formzinho">
+                
+                <div class="container-form">
+                    <label for="input1">Altura:</label>
+                    <input type="text" name="inputum" id="input1" required step="0.01">
+                </div>
+                
+                <div class="container-form">
+                    <label for="input2">Peso:</label>
+                    <input type="text" name="inputdois" id="input2" required step="0.01">
+                </div>
+                
+                <button>Send</button>
+
+                <div id="container-resultado">
+                    
+                </div>
+            </form>
+        </section>
+    </div>
+    <script src="assets/js/main2.js"></script>
+ </body>
+ </html>
