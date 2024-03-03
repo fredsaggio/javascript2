@@ -91,3 +91,7 @@ button:active {
 .paragrafo-resultado {
     background-color: rgb(46, 216, 179);
 }
+
+.paragrafo-false {
+    background-color: rgb(235, 87, 71)
+}
