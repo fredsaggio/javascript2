@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste</title>
+</head>
+<body>
+    <h1>teste</h1>
+
+    <form action="test.php" method="get" >
+        <input type="text" name="text" id="itext" oninput="contarCaracteres()">
+    </form>
+
+    <div id="resultado">
+        0
+    </div>
+
+    <script>
+
+        function contarCaracteres() {
+            const input_texto = document.querySelector('input#itext').value;
+            const contador = document.querySelector('div#resultado');
+            contador.innerHTML = input_texto.length; 
+        }
+    </script>
+</body>
+</html>
