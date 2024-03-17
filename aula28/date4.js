@@ -1,25 +1,50 @@
-dataEscolhida = new Date('2021-03-24')
-diaDaSemana = dataEscolhida.getDay()
-escolherODia = diaAtualDaSemana(diaDaSemana)
+data = new Date(2005, 2, 28, 15, 20, 20);
+dataFormatada = formatandoData(data);
 
-function diaAtualDaSemana(diaDaSemana) {
-    switch (diaDaSemana) {
+diaDaSemana = data.getDay();
+escolherODia = diaAtualDaSemana(diaDaSemana);
+
+function formatandoData(data) {
+    const dia = zeroAEsquerda(data.getDate());
+    const mes = zeroAEsquerda(data.getMonth() + 1);
+    const ano = zeroAEsquerda(data.getFullYear());
+    const horas = zeroAEsquerda(data.getHours());
+    const minutes = zeroAEsquerda(data.getMinutes());
+    const seconds = zeroAEsquerda(data.getSeconds());
+    
+    return `${dia}/${mes}/${ano} ${horas}:${minutes}:${seconds}`
+}
+
+function zeroAEsquerda(num) {
+    return num >= 10? num : `0${num}`
+}
+
+function diaAtualDaSemana(dia) {
+    
+    switch (dia) {
         case 0:
-            return diaDaSemana = 'Domingo';
+            dia = 'Domingo';
+            return dia;
         case 1: 
-            return diaDaSemana = 'Segunda-feira';
+            dia = 'Segunda-feira';
+            return dia;
         case 2: 
-            return diaDaSemana = 'Terça-feira';
+            dia = 'Terça-feira';
+            return dia;
         case 3:
-            return diaDaSemana = 'Quarta-feira';
+            dia = 'Quarta-feira';
+            return dia;
         case 4:
-            return diaDaSemana = 'Quinta-feira';
+            dia = 'Quinta-feira';
+            return dia;
         case 5:
-            return diaDaSemana = 'Sexta-feira';
+            dia = 'Sexta-feira';
+            return dia;
         default:
-            return diaDaSemana = 'Dia inválido';
-            
+            dia = 'Dia i dianválido';
+            return dia;
     }
 }
 
-console.log(`Hoje é ${escolherODia}, ${dataEscolhida.toString()}.`)
+console.log(`Hoje é ${escolherODia}, ${dataFormatada}.`)
+console.log(data.getMonth())

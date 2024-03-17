@@ -16,7 +16,7 @@ function formataData(data){
 
 }
 
-data = new Date(2021, 3, 7); // Exemplo de data.
+data = new Date(); // Exemplo de data.
 dataBrasil = formataData(data);
 
 console.log(dataBrasil)
