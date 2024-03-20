@@ -41,7 +41,7 @@ function diaAtualDaSemana(dia) {
             dia = 'Sexta-feira';
             return dia;
         default:
-            dia = 'Dia i dianválido';
+            dia = 'Dia inválido';
             return dia;
     }
 }
