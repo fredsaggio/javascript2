@@ -1,9 +1,9 @@
-const boxText = document.querySelector('h1#mainText'); 
+/* const boxText = document.querySelector('h1#mainText'); 
 const data = new Date();
 
-boxText.innerHTML = data.toLocaleDateString('pt-BR', {dateStyle: 'full'}); // Tava dando erro no 'time Style', sempre olhe no console.
+boxText.innerHTML = data.toLocaleDateString('pt-BR', {dateStyle: 'full'}); // Tava dando erro no 'time Style', sempre olhe no console. */
 
-/* function allScope(){
+function allScope(){
     const data = new Date(); // Ele me dá sempre os valores específicos e de forma seca. 
     const horaAtual = data.getHours();
     const diaSemanaNumero = data.getDay();
@@ -105,4 +105,4 @@ boxText.innerHTML = data.toLocaleDateString('pt-BR', {dateStyle: 'full'}); // Ta
     const dataFormatada = textoFormatado()
     textBox.innerHTML = dataFormatada
 }
-allScope(); */
+allScope();
