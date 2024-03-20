@@ -59,6 +59,8 @@ function allScope(){
     function zeroLeft(num) {
         return num > 10 ? num : `0${num}`
     }
+
+    
     function mesCorreto(mes) {
         switch(mes) {
             case 0:

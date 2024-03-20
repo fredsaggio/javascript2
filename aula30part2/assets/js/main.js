@@ -1,44 +1,38 @@
 function allScope(){
-    const data = new Date(); // Ele me dá sempre os valores específicos e de forma seca. 
-    const horaAtual = data.getHours();
-    const diaSemanaNumero = data.getDay();
-    const diaSemanaTexto = diaDaSemana(diaSemanaNumero);
-    const anoo = data.getFullYear()
-    const mes = data.getMonth();
+
     const textBox = document.getElementById('mainText');
-    const mesTexto = mesCorreto(mes)
-    const minutoss = data.getMinutes()
+    const data = new Date(); // Ele me dá sempre os valores específicos e de forma seca. 
+    
+    function nomeDosDias(dia) {
+        let diaNome = ['Domingo', 'Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado'];
 
-    function diaDaSemana(dia) {
-        let diaSemana = ['Domingo', 'Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado']
-
-        return diaSemana[dia];
+        return diaNome[dia];
     }
 
     function textoFormatado() {
-        const dia = diaSemanaTexto;
-        const diaNoMes = data.getDate()
-        const dianumero = zeroLeft(diaNoMes);
-        const mes = mesTexto;
-        const ano = anoo;
-        const hora = zeroLeft(horaAtual);
-        const minutos = zeroLeft(minutoss);
-        
-        return `${dia}, ${dianumero} de ${mes} de ${ano} ${hora}:${minutos}`
+        const dia = nomeDosDias(diaSemana);
+
+        const mesNome = nomeDosMeses(mes);
+
+        return `${dia}, ${zeroLeft(data.getDate())} de ${mesNome} de ${data.getFullYear()} ${zeroLeft(data.getHours())}:${zeroLeft(data.getMinutes())}`;
         
     }
 
     function zeroLeft(num) {
-        return num > 10 ? num : `0${num}`
+        return num > 10 ? num : `0${num}`;
     }
 
-    function mesCorreto(mes) {
-        let mesFormatado = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro']
+    function nomeDosMeses(mes) {
+        let meses = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'];
 
-        return mesFormatado[mes];
+        return meses[mes];
     }
-    const dataFormatada = textoFormatado()
-    textBox.innerHTML = dataFormatada
+
+    const diaSemana = data.getDay();
+    const mes = data.getMonth();
+
+    const dataFormatada = textoFormatado();
+    textBox.innerHTML = dataFormatada;
 }
 allScope();
 
