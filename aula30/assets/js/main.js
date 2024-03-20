@@ -1,4 +1,9 @@
-function allScope(){
+const boxText = document.querySelector('h1#mainText'); 
+const data = new Date();
+
+boxText.innerHTML = data.toLocaleDateString('pt-BR', {dateStyle: 'full'}); // Tava dando erro no 'time Style', sempre olhe no console.
+
+/* function allScope(){
     const data = new Date(); // Ele me dá sempre os valores específicos e de forma seca. 
     const horaAtual = data.getHours();
     const diaSemanaNumero = data.getDay();
@@ -54,7 +59,6 @@ function allScope(){
     function zeroLeft(num) {
         return num > 10 ? num : `0${num}`
     }
-
     function mesCorreto(mes) {
         switch(mes) {
             case 0:
@@ -98,10 +102,7 @@ function allScope(){
 
         }
     }
-
     const dataFormatada = textoFormatado()
     textBox.innerHTML = dataFormatada
-
 }
-
-allScope();
+allScope(); */
