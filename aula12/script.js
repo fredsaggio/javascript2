@@ -1,13 +1,8 @@
-let varA = 'A';
-let varB = 'B';
-let varC = 'C';
+let A = 'A';
+let B = 'B';
+let C = 'C';
 
-[varA, varB, varC] = [varB, varC, varA]
+[A, B, C] = [B, C, A]
 
-console.log(varA, varB, varC)
-
-/* const varATemp = varA
-varA = varB
-varB = varC
-varC = varATemp */
+console.log(A, B, C)
 

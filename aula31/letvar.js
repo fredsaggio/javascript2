@@ -16,7 +16,7 @@ var teste = 'Ronaldo'
 function oiMano(){
     var teste = 'patrícia';
     console.log(teste)
-    
+
     if (verdadeiro) {
         var teste = 'peixe'
         console.log(teste)
@@ -26,7 +26,3 @@ function oiMano(){
 oiMano();
 
 console.log(teste)
-
-
-
-
