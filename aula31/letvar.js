@@ -14,7 +14,7 @@ if (verdadeiro) {
 var teste = 'Ronaldo'
 
 function oiMano(){
-    var teste = 'patrícia';
+    var teste = 'Letícia';
     console.log(teste)
 
     if (verdadeiro) {

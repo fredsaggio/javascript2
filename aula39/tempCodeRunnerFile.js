@@ -1,0 +1,1 @@
+random(min, max)
