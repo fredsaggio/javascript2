@@ -12,7 +12,7 @@ containerPai.appendChild(container);
 
 for(let i in frases){
     let {tag, texto} = frases[i];
-    tagNova = document.createElement(tag)
+    let tagNova = document.createElement(tag)
     tagNova.innerText = texto;
     container.appendChild(tagNova);
 }

@@ -1,3 +1,9 @@
-let teste = 1
+let teste = 'americanas'
+let letras;
 
-console.log(isNaN(teste))
+for(let i of teste) {
+    console.log(i)
+    letras += i
+}
+
+console.log(teste)
